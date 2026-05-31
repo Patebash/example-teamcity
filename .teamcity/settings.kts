@@ -48,5 +48,9 @@ object Build : BuildType({
             runnerArgs = "-Dmaven.test.failure.ignore=true"
             userSettingsSelection = "settings.xml"
         }
+        maven {
+            id = "Maven2_1"
+            goals = "clean test"
+        }
     }
 })
